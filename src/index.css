@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none !important;
+}
+
+html, body, img {
+  height: 100%;
+  width: 100%;
+    cursor: none !important;
+}
+
+body {
+  background-color: #EFE9E2;
+}
+
+::-moz-selection {
+  background-color: #EF9B07; /* selection background color */
+  color: white; /* text color when selected */
+}
+
+::selection {
+  background-color: #EF9B07; /* selection background color */
+  color: white; /* text color when selected */
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.flexCenterText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@font-face {
+  font-family: PelicaBold;
+  src: url("../public/fonts/pelinka/Pelinka-Bold.otf");
+}
+@font-face {
+  font-family: PelicaLight;
+  src: url("../public/fonts/pelinka/Pelinka-ExpandedExtraLight.otf");
+}
+@font-face {
+  font-family: MontserratMedium;
+  src: url("../public/fonts/Crimson/Montserrat_Alternates/MontserratAlternates-Medium.ttf");
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url("../public/fonts/Crimson/Montserrat_Alternates/MontserratAlternates-Bold.ttf");
+}
+@font-face {
+  font-family: stack;
+  src: url("../public/fonts/manyFont/Stack_Sans_Text/StackSansText-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: therunes;
+  src: url("../public/fonts/manyFont/therunes/TherunesDemo-Regular.otf");
+}
+@font-face {
+  font-family: cokey;
+  src: url("../public/fonts/manyFont/coky/Coky otf.otf");
+}
+@font-face {
+  font-family: nexover;
+  src: url("../public/fonts/manyFont/nexover/NexoverDemo-Regular.otf");
+}
+@font-face {
+  font-family: beardeys;
+  src: url("../public/fonts/manyFont/bear_days/Bear-Days/Bear_Days.otf");
+}/*# sourceMappingURL=index.css.map */

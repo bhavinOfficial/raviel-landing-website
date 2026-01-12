@@ -23,7 +23,7 @@ const Navbar = () => {
   const iconRef = useRef(null);
 
   const menuItems = [
-    { label: "HOME123hello", link: "Home" },
+    { label: "HOME", link: "Home" },
     { label: "ABOUT US", link: "About" },
     { label: "SERVICES", link: "Services" },
     { label: "LEARN", link: "Learn" },

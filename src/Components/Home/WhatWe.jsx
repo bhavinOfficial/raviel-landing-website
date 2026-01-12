@@ -5,7 +5,7 @@ import home3men from "../../assets/images/home/home3men.png";
 import home3card from "../../assets/images/home/home3card.png";
 import home3mobile from "../../assets/images/home/home3mobile.png";
 import home3menwalk from "../../assets/images/home/home3menwalk.png";
-import clockHome from "../../assets/images/home/clock.mp4";
+import clockHome from "../../assets/TODOLIST/CLOCK/1.mp4";
 
 const WhatWe = () => {
   return (

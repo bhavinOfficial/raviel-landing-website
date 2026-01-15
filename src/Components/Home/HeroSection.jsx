@@ -76,7 +76,7 @@ const HeroSection = () => {
             }}
           >
             {/* Video Card */}
-            {/* <Box
+            <Box
               sx={{
                 height: { xs: 140, md: 170 },
                 width: { xs: "100%", sm: 260, md: 300 },
@@ -101,7 +101,7 @@ const HeroSection = () => {
                   objectFit: "cover",
                 }}
               />
-            </Box> */}
+            </Box>
 
             {/* Button Card */}
             <Box

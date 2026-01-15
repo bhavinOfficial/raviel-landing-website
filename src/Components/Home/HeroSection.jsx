@@ -8,10 +8,11 @@ const HeroSection = () => {
     <Box>
       <Box
         sx={{
-          minHeight: { xs: "100vh", md: "80vh" },
+          minHeight: { xs: "50vh", md: "80vh" },
           display: "flex",
           alignItems: "center",
           fontFamily: "stack",
+          width:"100%"
         }}
       >
         <Box sx={{ px: { xs: "6vw", md: "10vw" }, width: "100%" }}>
@@ -22,6 +23,8 @@ const HeroSection = () => {
               fontSize: { xs: "38px", sm: "48px", md: "64px", lg: "74px" },
               lineHeight: 1.2,
               pb: "20px",
+              textAlign:{ xs: "center", lg: "start" },
+              width:{ xs: "100%", lg: "70%" },
             }}
           >
             Powering
@@ -43,7 +46,7 @@ const HeroSection = () => {
                 marginBottom:"20px"
               }}
             />
-            Your Business <br /> with Smart Digital Solutions
+            Your Business  with Smart Digital Solutions
           </Box>
 
           {/* ================= Subheading ================= */}
@@ -53,9 +56,12 @@ const HeroSection = () => {
               fontSize: { xs: "16px", sm: "18px", md: "22px", lg: "32px" },
               pb: "30px",
               color: "#444",
+              width:"70%",
+              textAlign:{ xs: "center", lg: "start" },
+              margin:{ xs: "auto", lg: "0" },
             }}
           >
-            We deliver reliable, scalable, and modern services designed <br />
+            We deliver reliable, scalable, and modern services designed 
             to accelerate your business growth.
           </Box>
 
@@ -66,6 +72,7 @@ const HeroSection = () => {
               alignItems: "center",
               gap: "20px",
               flexDirection: { xs: "column", sm: "row" },
+              justifyContent:{ xs: "center", lg: "start" },
             }}
           >
             {/* Video Card */}

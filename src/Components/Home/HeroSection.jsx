@@ -37,9 +37,10 @@ const HeroSection = () => {
                 width: { xs: "120px", sm: "160px", md: "200px", lg: "220px" },
                 height: { xs: "45px", sm: "60px", md: "70px", lg: "80px" },
                 mx: 2,
-                borderRadius: "20px",
+                borderRadius: "40px",
                 verticalAlign: "middle",
                 objectFit: "cover",
+                marginBottom:"20px"
               }}
             />
             Your Business <br /> with Smart Digital Solutions

@@ -1,142 +1,110 @@
-import { Box, Button } from "@mui/material"
-import React from "react"
-import herosectionrobotvideo from "../../assets/images/home/Comp.mp4"
-import heroline from "../../assets/images/home/herolinevideo.mp4"
+import { Box, Button, Typography } from '@mui/material'
+import React from 'react'
+import herosectionvideo from "../../assets/images/home/Comp.mp4"
+import FlagCircleIcon from '@mui/icons-material/FlagCircle';
 
 const HeroSection = () => {
   return (
-    <Box>
+    <>
       <Box
         sx={{
-          minHeight: { xs: "50vh", md: "80vh" },
-          display: "flex",
-          alignItems: "center",
+          mx: { xs: 2, sm: 4, md: 8, lg: 12 },
+          height: { xs: "auto", md: "85vh" },
           fontFamily: "stack",
-          width:"100%"
+          display: "flex",
+          flexDirection: "column",
+          gap: { xs: 4, md: 6 },
         }}
       >
-        <Box sx={{ px: { xs: "6vw", md: "10vw" }, width: "100%" }}>
-          {/* ================= Heading ================= */}
-          <Box
+
+        {/* ================= Text Section ================= */}
+        <Box sx={{ textAlign: "center", pt: { xs: 3, md: 4 } }}>
+          
+          <Typography
             sx={{
+              fontSize: { xs: "32px", sm: "40px", md: "55px", lg: "65px" },
               fontFamily: "beardeys",
-              fontSize: { xs: "38px", sm: "48px", md: "64px", lg: "74px" },
+              mb: 2,
               lineHeight: 1.2,
-              pb: "20px",
-              textAlign:{ xs: "center", lg: "start" },
-              width:{ xs: "100%", lg: "70%" },
             }}
           >
-            Powering
-            <Box
-              component="video"
-              src={heroline}
-              autoPlay
-              loop
-              muted
-              playsInline
-              sx={{
-                display: "inline-block",
-                width: { xs: "120px", sm: "160px", md: "200px", lg: "220px" },
-                height: { xs: "45px", sm: "60px", md: "70px", lg: "80px" },
-                mx: 2,
-                borderRadius: "40px",
-                verticalAlign: "middle",
-                objectFit: "cover",
-                marginBottom:"20px"
-              }}
-            />
-            Your Business  with Smart Digital Solutions
-          </Box>
+            Powering Your Business with Smart Digital Solutions
+          </Typography>
 
-          {/* ================= Subheading ================= */}
-          <Box
+          <Typography
             sx={{
-              fontFamily: "stack",
-              fontSize: { xs: "16px", sm: "18px", md: "22px", lg: "32px" },
-              pb: "30px",
-              color: "#444",
-              width:"70%",
-              textAlign:{ xs: "center", lg: "start" },
-              margin:{ xs: "auto", lg: "0" },
+              fontSize: { xs: "16px", sm: "18px", md: "22px" },
+              maxWidth: "900px",
+              mx: "auto",
+              mb: 3,
             }}
           >
-            We deliver reliable, scalable, and modern services designed 
+            We deliver reliable, scalable, and modern services designed
             to accelerate your business growth.
-          </Box>
+          </Typography>
 
-          {/* ================= CTA Section ================= */}
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "20px",
-              flexDirection: { xs: "column", sm: "row" },
-              justifyContent:{ xs: "center", lg: "start" },
-            }}
-          >
-            {/* Video Card */}
-            <Box
+          {/* ================= Button ================= */}
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Button
               sx={{
-                height: { xs: 140, md: 170 },
-                width: { xs: "100%", sm: 260, md: 300 },
-                borderRadius: "100px 100px 0 100px",
-                overflow: "hidden",
-                bgcolor: "black",
-                border: "5px solid black",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
+                display: "flex",
+                alignItems: "center",
+                gap: "12px",
+                px: { xs: 2, md: 2.5 },
+                py: { xs: 1, md: 1.2 },
+                borderRadius: "999px",
+                background: "#ffffff",
+                color: "#000",
+                boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
+                textTransform: "none",
+                '&:hover': { background: "#f5f5f5" },
               }}
             >
               <Box
-                component="video"
-                src={herosectionrobotvideo}
-                autoPlay
-                loop
-                muted
-                playsInline
                 sx={{
-                  height: "100%",
-                  width: "100%",
-                  objectFit: "cover",
-                }}
-              />
-            </Box>
-
-            {/* Button Card */}
-            <Box
-              sx={{
-                height: { xs: 140, md: 170 },
-                width: { xs: "100%", sm: 260, md: 300 },
-                bgcolor: "#A699F9",
-                borderRadius: "100px 100px 100px 0px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Button
-                sx={{
-                  px: { xs: 10, md: 8 },
-                  py: { xs: 4, md: 5 },
-                  bgcolor: "#FFD8D8",
-                  borderRadius: "100px",
-                  fontSize: { xs: "16px", md: "22px" },
-                  color: "#000",
-                  textTransform: "none",
-                  fontWeight: 600,
-                  "&:hover": {
-                    bgcolor: "#ffcaca",
-                  },
+                  width: { xs: 36, md: 42 },
+                  height: { xs: 36, md: 42 },
+                  borderRadius: "50%",
+                  background: "#D9F2FF",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
-                Get Started
-              </Button>
-            </Box>
+                <FlagCircleIcon />
+              </Box>
+
+              <Typography sx={{ fontSize: { xs: "14px", md: "16px" }, fontWeight: 600 }}>
+                Start now
+              </Typography>
+            </Button>
           </Box>
         </Box>
+
+        {/* ================= Video Section ================= */}
+        <Box
+          sx={{
+            height: { xs: "220px", sm: "320px", md: "70%" },
+            borderRadius: { xs: "24px", md: "50px" },
+            overflow: "hidden",
+          }}
+        >
+          <video
+            src={herosectionvideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        </Box>
+
       </Box>
-    </Box>
+    </>
   )
 }
 

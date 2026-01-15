@@ -109,11 +109,11 @@ const HeroSection = () => {
             >
               <Button
                 sx={{
-                  px: { xs: 4, md: 6 },
-                  py: { xs: 2, md: 3 },
+                  px: { xs: 10, md: 8 },
+                  py: { xs: 4, md: 5 },
                   bgcolor: "#FFD8D8",
                   borderRadius: "100px",
-                  fontSize: { xs: "14px", md: "16px" },
+                  fontSize: { xs: "16px", md: "22px" },
                   color: "#000",
                   textTransform: "none",
                   fontWeight: 600,

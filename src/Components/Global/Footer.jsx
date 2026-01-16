@@ -76,7 +76,7 @@ const Footer = () => {
           </Typography>
 
           {/* Rating Section */}
-          <Box sx={{ mt: 2 }}>
+          {/* <Box sx={{ mt: 2 }}>
             <Typography
               sx={{ fontSize: { xs: "4vw", sm: "2vw", md: "1vw" }, mb: 1 }}
             >
@@ -91,7 +91,7 @@ const Footer = () => {
               emptyIcon={<StarRoundedIcon fontSize="inherit" />}
               sx={{ fontSize: { xs: "8vw", sm: "5vw", md: "3vw" } }}
             />
-          </Box>
+          </Box> */}
         </Box>
 
         {/* RIGHT SIDE MENU SECTIONS */}

@@ -2,8 +2,10 @@ import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
 import herosectionvideo from "../../assets/images/home/Comp.mp4"
 import FlagCircleIcon from '@mui/icons-material/FlagCircle';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+  const navigate = useNavigate()
   return (
     <>
       <Box
@@ -13,7 +15,7 @@ const HeroSection = () => {
           fontFamily: "stack",
           display: "flex",
           flexDirection: "column",
-          gap: { xs: 4, md: 6 },
+          gap: { xs: 4, md: 2 },
         }}
       >
 
@@ -46,6 +48,7 @@ const HeroSection = () => {
           {/* ================= Button ================= */}
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Button
+            onClick={() => navigate("/payment")}
               sx={{
                 display: "flex",
                 alignItems: "center",

@@ -76,22 +76,7 @@ const Footer = () => {
           </Typography>
 
           {/* Rating Section */}
-          {/* <Box sx={{ mt: 2 }}>
-            <Typography
-              sx={{ fontSize: { xs: "4vw", sm: "2vw", md: "1vw" }, mb: 1 }}
-            >
-              Rate Our Website
-            </Typography>
 
-            <Rating
-              name="read-only-rating"
-              value={5}
-              readOnly
-              icon={<StarRoundedIcon fontSize="inherit" />}
-              emptyIcon={<StarRoundedIcon fontSize="inherit" />}
-              sx={{ fontSize: { xs: "8vw", sm: "5vw", md: "3vw" } }}
-            />
-          </Box> */}
         </Box>
 
         {/* RIGHT SIDE MENU SECTIONS */}

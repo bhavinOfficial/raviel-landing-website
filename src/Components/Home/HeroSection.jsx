@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
-import herosectionvideo from "../../assets/images/home/Comp.mp4"
+import herosectionvideo from "../../assets/images/home/herovideo.mp4"
 import FlagCircleIcon from '@mui/icons-material/FlagCircle';
 import { useNavigate } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const HeroSection = () => {
           fontFamily: "stack",
           display: "flex",
           flexDirection: "column",
-          gap: { xs: 4, md: 2 },
+          gap: { xs: 4, md: 4 },
         }}
       >
 
@@ -36,9 +36,9 @@ const HeroSection = () => {
           <Typography
             sx={{
               fontSize: { xs: "16px", sm: "18px", md: "22px" },
-              maxWidth: "900px",
+              maxWidth: "950px",
               mx: "auto",
-              mb: 3,
+              mb: 2,
             }}
           >
             We deliver reliable, scalable, and modern services designed
@@ -101,7 +101,8 @@ const HeroSection = () => {
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "cover",
+              // objectFit: "cover",
+              backgroundColor:"#010000"
             }}
           />
         </Box>
